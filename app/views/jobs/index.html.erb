@@ -1,0 +1,9 @@
+<h1>Todays Job</h1>
+
+<ul>
+	<% @jobs.each do |job| %>
+		<li>
+			<strong> <%= job.company_name %> </strong> - <%= job.job_title %>
+		</li>
+	<% end %>
+</ul>
