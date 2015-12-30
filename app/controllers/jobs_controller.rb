@@ -21,4 +21,8 @@ class JobsController < ApplicationController
 			render :new
 		end
 	end
+
+	def edit
+		@job = Job.find(params[:id])
+	end
 end
