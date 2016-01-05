@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   post "jobs/" => "jobs#create"
   get "jobs/:id/edit" => "jobs#edit", as: :edit_bean
   patch "jobs/:id" => "jobs#update"
+  delete "jobs/:id" => "jobs#destroy"
 end
 
