@@ -2,6 +2,8 @@
 
 <p>We are looking for an awesome <%= @job.job_title %></p>
 
+<%= link_to "Edit this job?", edit_job_path(@job) %>
+
 <%= link_to "Check out more jobs!", jobs_path %>
 
 <%= link_to "Delete this job?", job_path, method: :delete, data: { confirm: "Are you sure you want to delete this job?" } %>
