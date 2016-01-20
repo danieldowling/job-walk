@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root "jobs#static"
   get "jobs/" => "jobs#index"
   get "jobs/new" => "jobs#new", as: :new_job
   get "jobs/:id" => "jobs#show", as: :job
