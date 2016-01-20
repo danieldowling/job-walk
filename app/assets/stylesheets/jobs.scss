@@ -2,8 +2,32 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+* {
+	margin: 0px;
+	padding:0px;
+}
+
 #static {
+
 	h1 {
 		text-align: center;
+		border-bottom: 3px solid black;
 	}
-}
+
+	.left-side {
+		text-align: center;
+		background-image: url(images/static_image.jpeg);
+		background: cover;
+	}
+
+	.right-side {
+		background-color: lightgrey;
+	}
+
+	#googleMap {
+		width: 600px;
+		height: 550px;
+	}
+
+};
+
